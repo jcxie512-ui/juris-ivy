@@ -56,17 +56,25 @@
         });
 
         // --- Auto-detect language by IP geolocation ---
-        fetch('https://ipapi.co/json/')
-            .then(function (res) { return res.json(); })
-            .then(function (data) {
-                if (data && data.country_code === 'CN') {
-                    switchLanguage('zh');
-                } else {
-                    switchLanguage('en');
-                }
+        function detectLang(url, getCountry) {
+            return fetch(url)
+                .then(function (res) { return res.json(); })
+                .then(function (data) {
+                    var country = getCountry(data);
+                    if (country === 'CN') {
+                        switchLanguage('zh');
+                    } else {
+                        switchLanguage('en');
+                    }
+                });
+        }
+
+        detectLang('https://ipapi.co/json/', function (d) { return d && d.country_code; })
+            .catch(function () {
+                return detectLang('https://ip-api.com/json/?fields=countryCode', function (d) { return d && d.countryCode; });
             })
             .catch(function () {
-                // fallback: keep English
+                // all failed, keep English
             });
     }
 
