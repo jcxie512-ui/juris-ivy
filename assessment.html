@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Assessment | Juris Ivy 清禾</title>
+    <meta name="description" content="Get a free personalized law school application assessment from Juris Ivy's senior consultants within 12 hours.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>⚖</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-en">Juris Ivy</span>
+                <span class="logo-divider">|</span>
+                <span class="logo-cn">清禾</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+                <a href="stories.html" data-en="Stories" data-zh="成功案例">Stories</a>
+                <a href="articles.html" data-en="Articles" data-zh="文章科普">Articles</a>
+                <a href="assessment.html" class="active" data-en="Free Assessment" data-zh="免费评估">Free Assessment</a>
+            </div>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-separator">/</span>
+                    <span class="lang-option active" data-lang="zh">中</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag" data-en="Free Assessment" data-zh="免费评估">Free Assessment</span>
+            <h1 class="page-hero-title" data-en="Get Your Personalized Assessment in 12 Hours" data-zh="12小时内获取你的专属评估报告">Get Your Personalized Assessment in 12 Hours</h1>
+            <p class="page-hero-subtitle" data-en="Fill out the form below and our senior consultants will send you a detailed, personalized assessment report." data-zh="填写以下表单，我们的资深顾问将为你发送详细的专属评估报告。">Fill out the form below and our senior consultants will send you a detailed, personalized assessment report.</p>
+        </div>
+    </section>
+
+    <!-- Assessment Form -->
+    <section class="section assessment-section">
+        <div class="container">
+            <div class="assessment-wrapper">
+                <form class="assessment-form" id="assessmentForm">
+                    <div class="form-group">
+                        <label data-en="Full Name *" data-zh="姓名 *">Full Name *</label>
+                        <input type="text" name="name" required placeholder="Your full name / 你的姓名">
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label data-en="Email *" data-zh="邮箱 *">Email *</label>
+                            <input type="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Phone / WeChat *" data-zh="电话 / 微信 *">Phone / WeChat *</label>
+                            <input type="text" name="phone" required placeholder="Phone number or WeChat ID / 电话或微信号">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Target Program *" data-zh="目标项目 *">Target Program *</label>
+                        <select name="program" required>
+                            <option value="" disabled selected data-en="Select your target program" data-zh="选择你的目标项目">Select your target program / 选择目标项目</option>
+                            <option value="jd">J.D.</option>
+                            <option value="llm">LL.M.</option>
+                            <option value="jsd">J.S.D. / S.J.D.</option>
+                            <option value="unsure" data-en="Not sure yet" data-zh="尚未确定">Not sure yet / 尚未确定</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label data-en="Current School / University *" data-zh="当前学校 *">Current School / University *</label>
+                            <input type="text" name="school" required placeholder="e.g. Peking University / 例如：北京大学">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Degree / Education Level *" data-zh="学历 *">Degree / Education Level *</label>
+                            <input type="text" name="degree" required placeholder="e.g. LL.B., B.A. in Law / 例如：法学学士">
+                        </div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label data-en="GPA (optional)" data-zh="GPA（选填）">GPA (optional)</label>
+                            <input type="text" name="gpa" placeholder="e.g. 3.8/4.0 or 88/100">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="LSAT / GRE Score (optional)" data-zh="LSAT / GRE 成绩（选填）">LSAT / GRE Score (optional)</label>
+                            <input type="text" name="test_score" placeholder="e.g. LSAT 170 or GRE 330">
+                        </div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label data-en="Years of Work Experience" data-zh="工作经验（年数）">Years of Work Experience</label>
+                            <input type="text" name="work_years" placeholder="e.g. 3 years / 例如：3年">
+                        </div>
+                        <div class="form-group">
+                            <label data-en="Work Field / Industry" data-zh="工作领域">Work Field / Industry</label>
+                            <input type="text" name="work_field" placeholder="e.g. Corporate Law, Tech / 例如：公司法、科技">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Upload Resume (optional)" data-zh="上传简历（选填）">Upload Resume (optional)</label>
+                        <div class="file-upload-area" id="fileUploadArea">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                            <p data-en="Click to upload or drag & drop" data-zh="点击上传或拖拽文件">Click to upload or drag & drop</p>
+                            <span data-en="PDF, DOC, DOCX (max 10MB)" data-zh="PDF, DOC, DOCX（最大10MB）">PDF, DOC, DOCX (max 10MB)</span>
+                            <input type="file" id="resumeFile" name="resume" accept=".pdf,.doc,.docx" hidden>
+                        </div>
+                        <div class="file-name" id="fileName"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Additional Information (optional)" data-zh="补充信息（选填）">Additional Information (optional)</label>
+                        <textarea name="additional" rows="4" placeholder="Any other information you'd like to share — target schools, special circumstances, questions, etc. / 其他你想分享的信息——目标学校、特殊情况、问题等。"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full btn-lg" data-en="Submit for Free Assessment" data-zh="提交免费评估">Submit for Free Assessment</button>
+                </form>
+
+                <div class="assessment-sidebar">
+                    <div class="sidebar-card">
+                        <h3 data-en="What Happens Next?" data-zh="接下来会怎样？">What Happens Next?</h3>
+                        <div class="sidebar-steps">
+                            <div class="sidebar-step">
+                                <span class="sidebar-step-num">1</span>
+                                <p data-en="You submit this form" data-zh="你提交此表单">You submit this form</p>
+                            </div>
+                            <div class="sidebar-step">
+                                <span class="sidebar-step-num">2</span>
+                                <p data-en="Our team reviews your profile" data-zh="我们的团队审阅你的资料">Our team reviews your profile</p>
+                            </div>
+                            <div class="sidebar-step">
+                                <span class="sidebar-step-num">3</span>
+                                <p data-en="Within 12 hours, you receive a personalized assessment report" data-zh="12小时内，你将收到专属评估报告">Within 12 hours, you receive a personalized assessment report</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3 data-en="Prefer to Chat Directly?" data-zh="更想直接聊聊？">Prefer to Chat Directly?</h3>
+                        <div class="sidebar-contact">
+                            <div class="sidebar-contact-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                <span data-en="WeChat: JurisIvy" data-zh="微信：JurisIvy">WeChat: JurisIvy</span>
+                            </div>
+                            <div class="sidebar-contact-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span>contact@jurisivy.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-promise">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <p data-en="Your information is kept strictly confidential and will only be used for assessment purposes." data-zh="你的信息将严格保密，仅用于评估目的。">Your information is kept strictly confidential and will only be used for assessment purposes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-en">Juris Ivy</span>
+                    <span class="logo-divider">|</span>
+                    <span class="logo-cn">清禾</span>
+                </div>
+                <p class="footer-tagline" data-en="Your path to top law schools." data-zh="通往顶级法学院之路。">Your path to top law schools.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" data-en="Home" data-zh="首页">Home</a>
+                <a href="stories.html" data-en="Stories" data-zh="成功案例">Stories</a>
+                <a href="articles.html" data-en="Articles" data-zh="文章科普">Articles</a>
+                <a href="assessment.html" data-en="Assessment" data-zh="免费评估">Assessment</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Juris Ivy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
