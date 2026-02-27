@@ -230,6 +230,25 @@
         });
     });
 
+    // --- Region "Mixed" detail toggle ---
+    var regionSelect = document.getElementById('regionSelect');
+    var regionDetail = document.getElementById('regionDetail');
+    if (regionSelect && regionDetail) {
+        regionSelect.addEventListener('change', function () {
+            if (this.value === 'mixed') {
+                regionDetail.style.display = 'block';
+                regionDetail.required = true;
+                // set placeholder to current language
+                var ph = currentLang === 'zh' ? regionDetail.dataset.zh : regionDetail.dataset.en;
+                if (ph) regionDetail.placeholder = ph;
+            } else {
+                regionDetail.style.display = 'none';
+                regionDetail.required = false;
+                regionDetail.value = '';
+            }
+        });
+    }
+
     // --- File Upload ---
     const fileUploadArea = document.getElementById('fileUploadArea');
     const resumeFile = document.getElementById('resumeFile');
