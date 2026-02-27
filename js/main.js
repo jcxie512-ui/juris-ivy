@@ -54,6 +54,20 @@
         langToggle.addEventListener('click', function () {
             switchLanguage(currentLang === 'en' ? 'zh' : 'en');
         });
+
+        // --- Auto-detect language by IP geolocation ---
+        fetch('https://ipapi.co/json/')
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                if (data && data.country_code === 'CN') {
+                    switchLanguage('zh');
+                } else {
+                    switchLanguage('en');
+                }
+            })
+            .catch(function () {
+                // fallback: keep English
+            });
     }
 
     // --- Mobile Menu ---

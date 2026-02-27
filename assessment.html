@@ -58,61 +58,75 @@
                 <form class="assessment-form" id="assessmentForm">
                     <div class="form-group">
                         <label data-en="Full Name *" data-zh="姓名 *">Full Name *</label>
-                        <input type="text" name="name" required placeholder="Your full name / 你的姓名">
+                        <input type="text" name="name" required data-en="Your full name" data-zh="你的姓名" placeholder="Your full name">
                     </div>
 
                     <div class="form-row-2">
                         <div class="form-group">
                             <label data-en="Email *" data-zh="邮箱 *">Email *</label>
-                            <input type="email" name="email" required placeholder="your@email.com">
+                            <input type="email" name="email" required data-en="your@email.com" data-zh="你的邮箱地址" placeholder="your@email.com">
                         </div>
                         <div class="form-group">
                             <label data-en="Phone / WeChat *" data-zh="电话 / 微信 *">Phone / WeChat *</label>
-                            <input type="text" name="phone" required placeholder="Phone number or WeChat ID / 电话或微信号">
+                            <input type="text" name="phone" required data-en="Phone number or WeChat ID" data-zh="电话号码或微信号" placeholder="Phone number or WeChat ID">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label data-en="Target Program *" data-zh="目标项目 *">Target Program *</label>
                         <select name="program" required>
-                            <option value="" disabled selected data-en="Select your target program" data-zh="选择你的目标项目">Select your target program / 选择目标项目</option>
-                            <option value="jd">J.D.</option>
-                            <option value="llm">LL.M.</option>
-                            <option value="jsd">J.S.D. / S.J.D.</option>
-                            <option value="unsure" data-en="Not sure yet" data-zh="尚未确定">Not sure yet / 尚未确定</option>
+                            <option value="" disabled selected data-en="Select your target program" data-zh="选择你的目标项目">Select your target program</option>
+                            <option value="jd" data-en="J.D." data-zh="J.D.（法律博士）">J.D.</option>
+                            <option value="llm" data-en="LL.M." data-zh="LL.M.（法学硕士）">LL.M.</option>
+                            <option value="jd-llm" data-en="J.D. + LL.M. Combined / Transfer" data-zh="J.D. + LL.M. 联合申请 / 转录">J.D. + LL.M. Combined / Transfer</option>
+                            <option value="jsd" data-en="J.S.D. / S.J.D." data-zh="J.S.D. / S.J.D.（法学博士研究）">J.S.D. / S.J.D.</option>
+                            <option value="unsure" data-en="Not sure yet" data-zh="尚未确定">Not sure yet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Target Country / Region *" data-zh="目标国家/地区 *">Target Country / Region *</label>
+                        <select name="region" required>
+                            <option value="" disabled selected data-en="Select target country/region" data-zh="选择目标国家/地区">Select target country/region</option>
+                            <option value="us" data-en="United States" data-zh="美国">United States</option>
+                            <option value="uk" data-en="United Kingdom" data-zh="英国">United Kingdom</option>
+                            <option value="canada" data-en="Canada" data-zh="加拿大">Canada</option>
+                            <option value="hk-sg" data-en="Hong Kong / Singapore" data-zh="香港 / 新加坡">Hong Kong / Singapore</option>
+                            <option value="australia" data-en="Australia" data-zh="澳洲">Australia</option>
+                            <option value="multiple" data-en="Multiple regions" data-zh="多个地区">Multiple regions</option>
                         </select>
                     </div>
 
                     <div class="form-row-2">
                         <div class="form-group">
                             <label data-en="Current School / University *" data-zh="当前学校 *">Current School / University *</label>
-                            <input type="text" name="school" required placeholder="e.g. Peking University / 例如：北京大学">
+                            <input type="text" name="school" required data-en="e.g. Peking University" data-zh="例如：北京大学" placeholder="e.g. Peking University">
                         </div>
                         <div class="form-group">
                             <label data-en="Degree / Education Level *" data-zh="学历 *">Degree / Education Level *</label>
-                            <input type="text" name="degree" required placeholder="e.g. LL.B., B.A. in Law / 例如：法学学士">
+                            <input type="text" name="degree" required data-en="e.g. LL.B., B.A. in Law" data-zh="例如：法学学士" placeholder="e.g. LL.B., B.A. in Law">
                         </div>
                     </div>
 
                     <div class="form-row-2">
                         <div class="form-group">
                             <label data-en="GPA (optional)" data-zh="GPA（选填）">GPA (optional)</label>
-                            <input type="text" name="gpa" placeholder="e.g. 3.8/4.0 or 88/100">
+                            <input type="text" name="gpa" data-en="e.g. 3.8/4.0 or 88/100" data-zh="例如：3.8/4.0 或 88/100" placeholder="e.g. 3.8/4.0 or 88/100">
                         </div>
                         <div class="form-group">
                             <label data-en="LSAT / GRE Score (optional)" data-zh="LSAT / GRE 成绩（选填）">LSAT / GRE Score (optional)</label>
-                            <input type="text" name="test_score" placeholder="e.g. LSAT 170 or GRE 330">
+                            <input type="text" name="test_score" data-en="e.g. LSAT 170 or GRE 330" data-zh="例如：LSAT 170 或 GRE 330" placeholder="e.g. LSAT 170 or GRE 330">
                         </div>
                     </div>
 
                     <div class="form-row-2">
                         <div class="form-group">
                             <label data-en="Years of Work Experience" data-zh="工作经验（年数）">Years of Work Experience</label>
-                            <input type="text" name="work_years" placeholder="e.g. 3 years / 例如：3年">
+                            <input type="text" name="work_years" data-en="e.g. 3 years" data-zh="例如：3年" placeholder="e.g. 3 years">
                         </div>
                         <div class="form-group">
                             <label data-en="Work Field / Industry" data-zh="工作领域">Work Field / Industry</label>
-                            <input type="text" name="work_field" placeholder="e.g. Corporate Law, Tech / 例如：公司法、科技">
+                            <input type="text" name="work_field" data-en="e.g. Corporate Law, Tech" data-zh="例如：公司法、科技" placeholder="e.g. Corporate Law, Tech">
                         </div>
                     </div>
 
@@ -129,7 +143,7 @@
 
                     <div class="form-group">
                         <label data-en="Additional Information (optional)" data-zh="补充信息（选填）">Additional Information (optional)</label>
-                        <textarea name="additional" rows="4" placeholder="Any other information you'd like to share — target schools, special circumstances, questions, etc. / 其他你想分享的信息——目标学校、特殊情况、问题等。"></textarea>
+                        <textarea name="additional" rows="4" data-en="Target schools, special circumstances, questions, etc." data-zh="目标学校、特殊情况、问题等" placeholder="Target schools, special circumstances, questions, etc."></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-full btn-lg" data-en="Submit for Free Assessment" data-zh="提交免费评估">Submit for Free Assessment</button>
